@@ -124,6 +124,81 @@ img {
   margin: 0 auto;
 }
 
+/* HEADER */
+.header {
+  background: var(--dark);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.header .header__nav ul {
+  display: flex;
+}
+.header .header__nav ul li {
+  /* background:var(--light); */
+  padding: 1rem;
+}
+.header .header__nav ul li a {
+  color: var(--light);
+}
+.header .header__nav ul li:hover a {
+  color: var(--primary);
+}
+.header .header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+/* CONTACT */
+.contact{
+  padding: 5rem 0;
+}
+.contact h2 {
+  color: var(--primary);
+  font-size: 5rem;
+  font-weight: 200;
+}
+.contact p{
+  color: var(--light)
+}
+.contact .contact__wrapper{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10rem;
+}
+.contact form {
+  background: var(--dark);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 2rem;
+}
+.contact form input{
+  height: 5rem;
+  padding:0 3rem;
+}
+.contact form textarea{
+  padding: 1rem 3rem;
+  resize: none;
+  min-height: 130px;
+}
+.contact table tr{
+  height: 8rem;
+  color: var(--light);
+}
+.contact table tr td:first-child{
+  width: 5rem;
+  font-size: 3rem;
+  color: var(--primary);
+}
+.contact table {
+  color: var(--primary);
+}
+
+
 /*REPEATABLE PATTERNS*/
 :root {
   --primary: #ffa700;
